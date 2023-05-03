@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(129, 236, 236);
+}
+div{
+    margin: 6px;
+    padding: 5px;
+    background-color: rgb(100, 220, 220);
+    width: 300px;
+}
+label{
+    display: block;
+}
+.producto-1{
+    display: inline-block;
+}
+.producto-2{
+    display: inline-block;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px 20px 18px 20px;
+}
+th, td{
+    height: 10px;
+}
+td{
+    text-align: center;
+}
+.uno{
+    text-align: right;
+}
+.valor-final{
+margin-left: 985px;
+}
+button{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: #ff8c00;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    padding: 0 50px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    text-transform: capitalize;
+    margin: 10px;
+}
+button::after, button::before{
+    content: '';
+    background-color: #9932cc;
+    height: 50%;
+    width: 0;
+    position: absolute;
+    transition: 0.3s cubic-bezier(
+        .785, .135, .15, .86
+    );
+    -webkit-transition: 0.3s cubic-bezier(
+        .785, .135, .15, .86
+    );
+z-index: -1;
+}
+button:hover::before{
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+button::before{
+    top: 0;
+    left: 0;
+    right: auto;
+}
+button:hover::after{
+    width: 100%;
+    left: 0;
+    right: auto;
+}
+button::after{
+    bottom: 0;
+    right: 0;
+    left: auto;
+}
