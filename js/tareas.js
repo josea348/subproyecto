@@ -27,6 +27,7 @@ function getValor(){
 function getFactura(){
     let r1, r2, r3, r4, r5, r6, r7
     
+    //guardando datos del HTML en la respectiva variable
     r1 = document.getElementById("subproyecto").value
     r2 = document.getElementById("producto-1").value
     console.log(r2)
@@ -48,6 +49,8 @@ function getFactura(){
     console.log(rta02)
     valor1 = rta01+rta02
     console.log(valor1)
+
+    //enviar la variable al html
     document.getElementById("resubproyecto").innerHTML = r1
     document.getElementById("resproducto-1").innerHTML = r2
     document.getElementById("rescantidad-1").innerHTML = r3

@@ -2,10 +2,12 @@ body{
     background-color: rgb(129, 236, 236);
 }
 div{
-    margin: 6px;
+    margin: 10px;
     padding: 5px;
-    background-color: rgb(100, 220, 220);
-    width: 300px;
+    width: 280px;
+}
+h1{
+    text-align: center;
 }
 label{
     display: block;
@@ -16,9 +18,13 @@ label{
 .producto-2{
     display: inline-block;
 }
-table, th, td{
-    border: 1px solid black;
+table{
+    display: flex;
+    justify-content: center;
     border-collapse: collapse;
+}
+th, td{
+    border: 1px solid rgb(240, 240, 240);
     padding: 15px 20px 18px 20px;
 }
 th, td{
@@ -28,10 +34,14 @@ td{
     text-align: center;
 }
 .uno{
-    text-align: right;
+    font-size: 1.3em;
+    text-align: left;
+}
+.dos{
+    font-size: 1.1em;
 }
 .valor-final{
-margin-left: 985px;
+    margin-left: 950px;
 }
 button{
     display: inline-block;
@@ -43,8 +53,8 @@ button{
     text-decoration: none;
     font-family: sans-serif;
     background-color: #ff8c00;
-    height: 55px;
-    line-height: 55px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     padding: 0 50px;
     z-index: 1;
